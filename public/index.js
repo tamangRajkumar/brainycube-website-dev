@@ -1,1 +1,1 @@
-export { default as destinationCover } from "./assets/images/destinationCover.jpg";
+export {default as Logo} from "./assets/images/logo.jpg";

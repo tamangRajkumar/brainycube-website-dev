@@ -7,7 +7,7 @@ const About = () => {
     <div id="about" className=" max-w-[1240px] mx-auto">
       <h1
         style={{ borderBottom: "2px solid green" }}
-        className="text-2xl font-bold text-center p-4"
+        className="text-2xl font-raleway font-bold text-center p-4"
       >
         About Us
       </h1>

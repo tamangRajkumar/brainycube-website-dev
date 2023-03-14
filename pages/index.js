@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Background from "@/src/components/Background/Background";
 import About from "@/src/components/AboutUs/About";
+import Outcomes from "@/src/components/Stats/Outcomes";
+import Card from "@/src/components/Card/Card";
+import Slider from "@/src/components/Slider/Slider";
+import { SliderData } from "@/src/components/Slider/SliderData";
+import Services from "@/src/components/Services/Services";
+import EventAndProgram from "@/src/components/EventsAndProgram";
 export default function Home() {
   return (
     <>
@@ -18,6 +24,11 @@ export default function Home() {
           message="Keep learning and exploring, you are the future of research!"
         />
         <About/>
+        <Outcomes/>
+        <Card/>
+        <Slider slides={SliderData}/>
+        <Services/>
+        <EventAndProgram/>
       </div>
     </>
   );

@@ -47,8 +47,8 @@ const Navbar = () => {
           {/* </div> */}
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4">
-            <Link href="/">Home</Link>
+          <li className="p-4"  >
+            <Link href="/" >Home</Link>
           </li>
           <li className="p-4">
             <Link href="/#about">About</Link>

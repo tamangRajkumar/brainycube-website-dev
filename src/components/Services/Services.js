@@ -13,6 +13,14 @@ const Services = () => {
     alignItems: "center",
     padding: "30px",
   };
+  const cardBody={
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "justify",
+  }
   return (
     <div style={{ background: "#e3e1e1" }} id="about" className="mx-auto">
       <h1
@@ -24,7 +32,7 @@ const Services = () => {
       <div class="flex flex-wrap justify-center">
         {/* //card1 */}
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <div style={cardBody} class="bg-white shadow-md rounded-md overflow-hidden">
             <div style={serviceCard} class="p-4">
               <GiBrainFreeze size="40px" style={{ color: "#009970" }} />
               <a href="/" class="text-lg font-semibold mb-2">
@@ -40,7 +48,7 @@ const Services = () => {
         </div>
         {/* card2 */}
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <div  style={cardBody} class="bg-white shadow-md rounded-md overflow-hidden">
             <div style={serviceCard} class="p-4">
               <MdModelTraining size="40px" style={{ color: "#009970" }} />
               <a href="/" class="text-lg font-semibold mb-2">
@@ -57,7 +65,7 @@ const Services = () => {
         </div>
         {/* card3 */}
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <div style={cardBody} class="bg-white shadow-md rounded-md overflow-hidden">
             <div style={serviceCard} class="p-4">
               <BiWorld size="40px" style={{ color: "#009970" }} />
               <a href="/" class="text-lg font-semibold mb-2">
@@ -77,7 +85,7 @@ const Services = () => {
       <div class="flex flex-wrap justify-center">
         {/* second card1 */}
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <div style={cardBody} class="bg-white shadow-md rounded-md overflow-hidden">
             <div style={serviceCard} class="p-4">
               <MdSupportAgent size="40px" style={{ color: "#009970" }} />
               <a href="/" class="text-lg font-semibold mb-2">
@@ -95,7 +103,7 @@ const Services = () => {
         </div>
         {/* second card2 */}
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <div style={cardBody} class="bg-white shadow-md rounded-md overflow-hidden">
             <div style={serviceCard} class="p-4">
               <FaDesktop size="40px" style={{ color: "#009970" }} />
               <a href="/" class="text-lg font-semibold mb-2">
@@ -111,8 +119,8 @@ const Services = () => {
           </div>
         </div>
         {/* second card3 */}
-        <div style={{ height: "20%" }} class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="bg-white shadow-md rounded-md overflow-hidden">
+        <div  class="w-full sm:w-1/2 lg:w-1/4 p-4">
+          <div style={cardBody} class="bg-white shadow-md rounded-md overflow-hidden">
             <div style={serviceCard} class="p-4">
               <AiFillCheckCircle size="40px" style={{ color: "#009970" }} />
               <a href="/" class="text-lg font-semibold mb-2">

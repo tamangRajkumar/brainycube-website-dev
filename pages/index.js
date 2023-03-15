@@ -7,6 +7,8 @@ import Slider from "@/src/components/Slider/Slider";
 import { SliderData } from "@/src/components/Slider/SliderData";
 import Services from "@/src/components/Services/Services";
 import EventAndProgram from "@/src/components/EventsAndProgram";
+import TeamMember from "@/src/components/Team/TeamMember";
+import Contact from "@/src/components/Contact/Contact";
 export default function Home() {
   return (
     <>
@@ -29,6 +31,9 @@ export default function Home() {
         <Slider slides={SliderData}/>
         <Services/>
         <EventAndProgram/>
+        <TeamMember/>
+        <Contact/>
+        
       </div>
     </>
   );

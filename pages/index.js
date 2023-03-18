@@ -9,6 +9,7 @@ import Services from "@/src/components/Services/Services";
 import EventAndProgram from "@/src/components/EventsAndProgram";
 import TeamMember from "@/src/components/Team/TeamMember";
 import Contact from "@/src/components/Contact/Contact";
+import Footer from "@/src/components/HeaderFooter/Footer";
 export default function Home() {
   return (
     <>
@@ -25,15 +26,15 @@ export default function Home() {
           heading="Brainycube Research Organization"
           message="Keep learning and exploring, you are the future of research!"
         />
-        <About/>
-        <Outcomes/>
-        <Card/>
-        <Slider slides={SliderData}/>
-        <Services/>
-        <EventAndProgram/>
-        <TeamMember/>
-        <Contact/>
-        
+        <About />
+        <Outcomes />
+        <Card />
+        <Slider slides={SliderData} />
+        <Services />
+        <EventAndProgram />
+        <TeamMember />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

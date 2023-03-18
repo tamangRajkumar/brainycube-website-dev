@@ -20,3 +20,9 @@ export {default as Subin} from "./assets/images/subin.jpg";
 export {default as Udit} from "./assets/images/udit.jpg";
 export {default as Manoj} from "./assets/images/manoj.jpg";
 export {default as Nimesh} from "./assets/images/nimesh.jpg";
+
+//carousel
+export {default as Participant} from "./assets/images/participants.jpg";
+export {default as Team} from "./assets/images/team.jpg";
+export {default as Winner} from "./assets/images/winner.jpg";
+export {default as Women} from "./assets/images/women.jpg";

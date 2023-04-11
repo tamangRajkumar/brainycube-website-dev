@@ -102,50 +102,50 @@ const Navbar = () => {
           <ul>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/">Home</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/#about">About</Link>
             </li>
 
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/services">Services</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/events">Events</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/portfolio">Portfolio</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/team">Team</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
               <Link href="/Contact">Contact </Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-1 text-4xl hover:text-gray-300"
+              className="p-1 text-1xl hover:text-gray-300"
             >
               <button
                 style={{

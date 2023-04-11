@@ -55,19 +55,19 @@ const Navbar = () => {
           </li>
 
           <li className="p-4">
-            <Link href="/services">Services</Link>
+            <Link href="#services">Services</Link>
           </li>
           <li className="p-4">
-            <Link href="/events">Events</Link>
+            <Link href="#events">Events</Link>
           </li>
           <li className="p-4">
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="#portfolio">Portfolio</Link>
           </li>
           <li className="p-4">
-            <Link href="/team">Team</Link>
+            <Link href="#team">Team</Link>
           </li>
           <li className="p-4">
-            <Link href="/Contact">Contact </Link>
+            <Link href="#contact">Contact </Link>
           </li>
           <li className="p-1">
             <button
@@ -117,31 +117,31 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-2xl hover:text-gray-300"
             >
-              <Link href="/services">Services</Link>
+              <Link href="/#services">Services</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-gray-300"
             >
-              <Link href="/events">Events</Link>
+              <Link href="/#events">Events</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-gray-300"
             >
-              <Link href="/portfolio">Portfolio</Link>
+              <Link href="/#portfolio">Portfolio</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-gray-300"
             >
-              <Link href="/team">Team</Link>
+              <Link href="/#team">Team</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-gray-300"
             >
-              <Link href="/Contact">Contact </Link>
+              <Link href="/#contact">Contact </Link>
             </li>
             <li
               onClick={handleNav}

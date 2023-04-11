@@ -22,7 +22,7 @@ const Services = () => {
     textAlign: "justify",
   }
   return (
-    <div style={{ background: "#e3e1e1" }} id="about" className="mx-auto">
+    <div id="services" style={{ background: "#e3e1e1" }} className="mx-auto">
       <h1
         style={{ background: "#009970", color: "white" }}
         className="text-2xl font-raleway font-bold text-center p-4"

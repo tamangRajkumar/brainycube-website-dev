@@ -6,10 +6,11 @@ import Card from "@/src/components/Card/Card";
 import Slider from "@/src/components/Slider/Slider";
 import { SliderData } from "@/src/components/Slider/SliderData";
 import Services from "@/src/components/Services/Services";
-import EventAndProgram from "@/src/components/EventsAndProgram";
+import EventAndProgram from "@/src/components/events";
 import TeamMember from "@/src/components/Team/TeamMember";
 import Contact from "@/src/components/Contact/Contact";
 import Footer from "@/src/components/HeaderFooter/Footer";
+import Navbar from "@/src/components/HeaderFooter/Nav";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
         {/* <h1 className="text-6xl font-raleway text-primary-green text-center">
           Brainycube Website
         </h1> */}
+        <Navbar />
         <Background
           heading="Brainycube Research Organization"
           message="Keep learning and exploring, you are the future of research!"
@@ -35,6 +37,7 @@ export default function Home() {
         <TeamMember />
         <Contact />
         <Footer />
+        
       </div>
     </>
   );

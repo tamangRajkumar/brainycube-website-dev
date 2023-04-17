@@ -1,5 +1,4 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Title from "@/src/components/events/Title";
 import EventCard from "@/src/components/events/EventCard";
 import EventDetailCard from "@/src/components/events/EventDetailCard";

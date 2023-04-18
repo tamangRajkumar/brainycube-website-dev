@@ -3,6 +3,7 @@ import { MdGroup } from "react-icons/md";
 import { MdEventSeat } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { GiProfit } from "react-icons/gi";
+import NumberSpring from "../utils/NumberSpring";
 
 const Outcomes = () => {
   const outcomeBody = {
@@ -31,7 +32,9 @@ const Outcomes = () => {
             <div className="p-4 " style={outcomeBody}>
               <MdGroup size="50px" style={{ marginRight: "5px" }} />
               <h1 className="text-3xl ">
-                <b>32</b>
+                <b>
+                  <NumberSpring n={32} />
+                </b>
               </h1>
               <p style={content}>Patners</p>
             </div>
@@ -42,7 +45,9 @@ const Outcomes = () => {
             <div style={outcomeBody} class="p-4">
               <MdEventSeat size="50px" style={{ marginRight: "5px" }} />
               <h1 className="text-3xl">
-                <b>35</b>
+                <b>
+                  <NumberSpring n={72} />
+                </b>
               </h1>{" "}
               <p style={content}>Meetings/Events</p>
             </div>
@@ -56,7 +61,9 @@ const Outcomes = () => {
                 style={{ marginRight: "5px" }}
               />
               <h1 className="text-3xl">
-                <b>28</b>
+                <b>
+                  <NumberSpring n={28} />
+                </b>
               </h1>
               <p style={content}>Project Done</p>
             </div>
@@ -67,7 +74,9 @@ const Outcomes = () => {
             <div style={outcomeBody} class="p-4">
               <GiProfit size="50px" style={{ marginRight: "5px" }} />
               <h1 className="text-3xl">
-                <b>1250</b>
+                <b>
+                  <NumberSpring n={1250} />
+                </b>
               </h1>{" "}
               <p style={content}>Happy Beneficiary</p>
             </div>

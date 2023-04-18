@@ -15,7 +15,7 @@ import {
 } from "@/public";
 
 const EventAndProgram = () => {
-  const [sortByYear, setSortByYear] = useState("");
+  const [filterByYear, setFilterByYear] = useState("");
 
   const events = [
     {
@@ -82,14 +82,18 @@ const EventAndProgram = () => {
     padding: "30px",
   };
 
-  const handleSortByYear = (event) => {
-    setSortByYear(event.target.value);
+  const bgColor = {
+    backgroundColor: "#009970",
+    color:"white"
+  } 
+  const handleFilterByYear = (year) => {
+    setFilterByYear(year);
   };
 
-  let sortedEvents = [...events];
-  if (sortByYear) {
-    sortedEvents = events.filter(
-      (event) => event.year === parseInt(sortByYear)
+  let filteredEvents = [...events];
+  if (filterByYear) {
+    filteredEvents = events.filter(
+      (event) => event.year === parseInt(filterByYear)
     );
   }
 
@@ -101,58 +105,102 @@ const EventAndProgram = () => {
       >
         Events and Programs
       </h1>
-      <div style={{marginTop:"20px"}} className="flex justify-center items-center mb-4">
-        <label htmlFor="sort-year" className="mr-2">
-          Sort by year:
-        </label>
-        <select
-          id="sort-year"
-          value={sortByYear}
-          onChange={handleSortByYear}
-          className="px-2 py-1 rounded-lg"
+  
+      <div
+        style={{ marginTop: "20px" }}
+        className="flex justify-center items-center mb-4"
+      >
+        <button
+          onClick={() => handleFilterByYear("")}
+          className={`px-2 py-1 rounded-lg ${
+            filterByYear === "" ? "bg-emerald-600 text-white" : "bg-gray-300"
+          } mr-2`}
         >
-          <option value="">All years</option>
-          <option value="2014">2014</option>
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-        </select>
+          All
+        </button>
+        <button
+          onClick={() => handleFilterByYear("2014")}
+          className={`${
+            filterByYear === "2014" ? "bg-emerald-600 text-white" : "bg-gray-300"
+          } px-2 py-1 rounded-lg mr-2`}
+        >
+          {" "}
+          2014{" "}
+        </button>
+        <button
+          onClick={() => handleFilterByYear("2016")}
+          className={`${
+            filterByYear === "2016" ? "bg-emerald-600 text-white" : "bg-gray-300"
+          } px-2 py-1 rounded-lg mr-2`}
+        >
+          {" "}
+          2016{" "}
+        </button>
+        <button
+          onClick={() => handleFilterByYear("2017")}
+          className={`${
+            filterByYear === "2017" ? "bg-emerald-600 text-white" : "bg-gray-300"
+          } px-2 py-1 rounded-lg mr-2`}
+        >
+          {" "}
+          2017{" "}
+        </button>
+        <button
+          onClick={() => handleFilterByYear("2018")}
+          className={`${
+            filterByYear === "2018" ? "bg-emerald-600 text-white" : "bg-gray-300"
+          } px-2 py-1 rounded-lg mr-2`}
+        >
+          {" "}
+          2018{" "}
+        </button>
+        <button
+          onClick={() => handleFilterByYear("2019")}
+          className={`${
+            filterByYear === "2019" ? "bg-emerald-600 text-white" : "bg-gray-300"
+          } px-2 py-1 rounded-lg mr-2`}
+        >
+          {" "}
+          2019{" "}
+        </button>
+
+
+
+
       </div>
-    
+      
+
       <div class="flex flex-wrap justify-center">
-         {/* //card1 */}
-         {sortedEvents.map((event, index) => (
-         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-           <div class="overflow-hidden  aspect-video  cursor-pointer rounded-xl relative group">
-             <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
-              <div>
-                <div class="transform-gpu  p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
-                  <div style={{ textAlign: "center" }} class="font-bold">
-                  
-                     <h2>{event.title}</h2>
-                    <p>{event.year}</p>
-                    <Link
-                      style={{ background: "#009970" }}
-                      href="/events/yss2016"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg "
-                    >
-                      Learn More
-                    </Link>
+        {/* //card1 */}
+        {filteredEvents.map((event, index) => (
+          <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+            <div class="overflow-hidden  aspect-video  cursor-pointer rounded-xl relative group">
+              <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                <div>
+                  <div class="transform-gpu  p-40 space-y-30 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                    <div style={{ textAlign: "center" }} class="font-bold">
+                      <h2>{event.title}</h2>
+                      <p>{event.year}</p>
+                      <Link
+                        style={{ background: "#009970" }}
+                        href="/events/yss2016"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg "
+                      >
+                        Learn More
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
+              <Image
+                alt=""
+                class="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                src={event.image}
+              />
             </div>
-            <Image
-              alt=""
-              class="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
-              src={event.image}
-            />
           </div>
-        </div>
         ))}
-        </div>
-
+      </div>
 
       {/* //ending */}
     </div>

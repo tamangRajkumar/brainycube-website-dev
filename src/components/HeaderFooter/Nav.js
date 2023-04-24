@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -9,6 +10,11 @@ const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const hoverColor = (e) => {
+    e.target.style.cssText =
+      "border-bottom: 3px solid #009970; margin-bottom: 5px; cursor: pointer; width:100%";
   };
 
   useEffect(() => {
@@ -31,7 +37,6 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          {/* <div style={{background:"#ffffb3",margin:"10px"}}> */}
           <h2
             style={{
               color: `${textColor}`,
@@ -39,35 +44,104 @@ const Navbar = () => {
               padding: "10px",
               cursor: "pointer",
             }}
-            className="font-bold text-4xl"
+            className="font-bold text-3xl"
           >
             <span style={{ color: "red" }}>Brainy</span>
             <span style={{ color: "green" }}>cube</span>
           </h2>
-          {/* </div> */}
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4"  >
-            <Link href="/" >Home</Link>
+          <li className="p-4">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Home
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/#about">About</Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              About
+            </Link>
           </li>
 
           <li className="p-4">
-            <Link href="#services">Services</Link>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Services
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="#events">Events</Link>
+            <Link
+              to="events"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Events
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="#portfolio">Portfolio</Link>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Portfolio
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="#team">Team</Link>
+            <Link
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Team
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="#contact">Contact </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Contact{" "}
+            </Link>
           </li>
           <li className="p-1">
             <button

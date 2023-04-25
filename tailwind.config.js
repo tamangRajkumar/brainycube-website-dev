@@ -16,6 +16,13 @@ module.exports = {
         "primary-gray-darker": "#777777",
         "primary-faded-black": "#212529",
       },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px'
+      }
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

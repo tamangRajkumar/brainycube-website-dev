@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -84,8 +83,8 @@ const EventAndProgram = () => {
 
   const bgColor = {
     backgroundColor: "#009970",
-    color:"white"
-  } 
+    color: "white",
+  };
   const handleFilterByYear = (year) => {
     setFilterByYear(year);
   };
@@ -98,14 +97,14 @@ const EventAndProgram = () => {
   }
 
   return (
-    <div id="events" className="mx-auto">
+    <div style={{margin:"30px 0px"}} id="events" className="mx-auto">
       <h1
         style={{ borderBottom: "2px solid #009970", color: "black" }}
         className="text-2xl font-bold text-center p-4"
       >
         Events and Programs
       </h1>
-  
+
       <div
         style={{ marginTop: "20px" }}
         className="flex justify-center items-center mb-4"
@@ -121,7 +120,9 @@ const EventAndProgram = () => {
         <button
           onClick={() => handleFilterByYear("2014")}
           className={`${
-            filterByYear === "2014" ? "bg-emerald-600 text-white" : "bg-gray-300"
+            filterByYear === "2014"
+              ? "bg-emerald-600 text-white"
+              : "bg-gray-300"
           } px-2 py-1 rounded-lg mr-2`}
         >
           {" "}
@@ -130,7 +131,9 @@ const EventAndProgram = () => {
         <button
           onClick={() => handleFilterByYear("2016")}
           className={`${
-            filterByYear === "2016" ? "bg-emerald-600 text-white" : "bg-gray-300"
+            filterByYear === "2016"
+              ? "bg-emerald-600 text-white"
+              : "bg-gray-300"
           } px-2 py-1 rounded-lg mr-2`}
         >
           {" "}
@@ -139,7 +142,9 @@ const EventAndProgram = () => {
         <button
           onClick={() => handleFilterByYear("2017")}
           className={`${
-            filterByYear === "2017" ? "bg-emerald-600 text-white" : "bg-gray-300"
+            filterByYear === "2017"
+              ? "bg-emerald-600 text-white"
+              : "bg-gray-300"
           } px-2 py-1 rounded-lg mr-2`}
         >
           {" "}
@@ -148,7 +153,9 @@ const EventAndProgram = () => {
         <button
           onClick={() => handleFilterByYear("2018")}
           className={`${
-            filterByYear === "2018" ? "bg-emerald-600 text-white" : "bg-gray-300"
+            filterByYear === "2018"
+              ? "bg-emerald-600 text-white"
+              : "bg-gray-300"
           } px-2 py-1 rounded-lg mr-2`}
         >
           {" "}
@@ -157,18 +164,15 @@ const EventAndProgram = () => {
         <button
           onClick={() => handleFilterByYear("2019")}
           className={`${
-            filterByYear === "2019" ? "bg-emerald-600 text-white" : "bg-gray-300"
+            filterByYear === "2019"
+              ? "bg-emerald-600 text-white"
+              : "bg-gray-300"
           } px-2 py-1 rounded-lg mr-2`}
         >
           {" "}
           2019{" "}
         </button>
-
-
-
-
       </div>
-      
 
       <div class="flex flex-wrap justify-center">
         {/* //card1 */}
@@ -177,10 +181,11 @@ const EventAndProgram = () => {
             <div class="overflow-hidden  aspect-video  cursor-pointer rounded-xl relative group">
               <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
                 <div>
-                  <div class="transform-gpu  p-40 space-y-30 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                  <div class="transform-gpu  p-10 space-y-10 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
                     <div style={{ textAlign: "center" }} class="font-bold">
-                      <h2>{event.title}</h2>
-                      <p>{event.year}</p>
+                      <h2>
+                        {event.title} <span>{event.year}</span>
+                      </h2>
                       <Link
                         style={{ background: "#009970" }}
                         href="/events/yss2016"

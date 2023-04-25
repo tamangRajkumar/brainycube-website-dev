@@ -10,7 +10,7 @@ function Title({ title }) {
       </h2>
       <Link href="/">
       <h3 className="text-1xl font-raleway font-bold text-center p-4" style={{marginRight:"20px"}}>
-        Home
+        Back
       </h3>
       </Link>
     </div>

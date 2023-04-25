@@ -3,11 +3,11 @@ import $ from "jquery";
 import "slick-carousel/slick/slick.min.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Team, Winner, Women } from "@/public";
+// import { Team, Winner, Women } from "@/public";
 
 const Slider1 = () => {
   const slides = [
-    { image: "images/participants.jpg" },
+    // { image: "images/participants.jpg" },
     // { image: { Team } },
     // { image: { Winner } },
     // { image: { Women } },

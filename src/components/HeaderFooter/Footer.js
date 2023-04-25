@@ -103,12 +103,12 @@ function Footer() {
                     </a>
                   </li>
                   <li class="mb-4">
-                    <a href="/" class="hover:underline">
+                    <a href="/#about" class="hover:underline">
                       About us
                     </a>
                   </li>
                   <li class="mb-4">
-                    <a href="/" class="hover:underline">
+                    <a href="/#services" class="hover:underline">
                       Services
                     </a>
                   </li>

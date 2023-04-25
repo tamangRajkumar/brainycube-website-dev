@@ -1,8 +1,8 @@
 import React from "react";
 import { MdGroup } from "react-icons/md";
-import { MdEventSeat } from "react-icons/md";
+import { MdOutlineEmojiEvents } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { GiProfit } from "react-icons/gi";
+import {BiHappyAlt} from "react-icons/bi"
 import NumberSpring from "../utils/NumberSpring";
 
 const Outcomes = () => {
@@ -36,20 +36,20 @@ const Outcomes = () => {
                   <NumberSpring n={32} />
                 </b>
               </h1>
-              <p style={content}>Patners</p>
+              <p style={content}>Collaborators </p>
             </div>
           </div>
         </div>
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
           <div>
             <div style={outcomeBody} class="p-4">
-              <MdEventSeat size="50px" style={{ marginRight: "5px" }} />
+              <MdOutlineEmojiEvents size="50px" style={{ marginRight: "5px" }} />
               <h1 className="text-3xl">
                 <b>
                   <NumberSpring n={72} />
                 </b>
               </h1>{" "}
-              <p style={content}>Meetings/Events</p>
+              <p style={content}>Events and Conferences</p>
             </div>
           </div>
         </div>
@@ -65,20 +65,20 @@ const Outcomes = () => {
                   <NumberSpring n={28} />
                 </b>
               </h1>
-              <p style={content}>Project Done</p>
+              <p style={content}>Project Completed</p>
             </div>
           </div>
         </div>
         <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
           <div>
             <div style={outcomeBody} class="p-4">
-              <GiProfit size="50px" style={{ marginRight: "5px" }} />
+              <BiHappyAlt size="50px" style={{ marginRight: "5px" }} />
               <h1 className="text-3xl">
                 <b>
                   <NumberSpring n={1250} />
                 </b>
               </h1>{" "}
-              <p style={content}>Happy Beneficiary</p>
+              <p style={content}>Happy Clients</p>
             </div>
           </div>
         </div>

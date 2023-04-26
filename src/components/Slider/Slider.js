@@ -4,8 +4,8 @@ import { SliderData } from "./SliderData";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const Slider = ({ slides }) => {
-  console.log("daqa",slides);
-  const [current, setCurrent] = useState(0);
+  console.log("daqa", slides);
+  const [current, setCurrent] = useState(1);
   // const length = slides.length;
 
   const nextSlide = () => {

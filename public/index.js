@@ -26,6 +26,8 @@ export {default as Manoj} from "./assets/images/manoj.jpg";
 export {default as Nimesh} from "./assets/images/nimesh.jpg";
 export {default as Tarachandra} from "./assets/images/Tarachandra.png";
 export {default as Bikash1} from "./assets/images/Bikash.png";
+export {default as Babita} from "./assets/images/Babita.jpg";
+export {default as Pradip} from "./assets/images/Pradip.jpg";
 
 //carousel
 export {default as Participant} from "./assets/images/participants.jpg";

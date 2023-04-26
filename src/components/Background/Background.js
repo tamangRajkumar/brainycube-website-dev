@@ -10,7 +10,7 @@ const Background = ({ heading, message }) => {
       <div style={{marginTop:"90px"}} className="p-5 text-white z-[2] mt-[-10rem]">
         <h2 className="text-5xl font-bold">{heading}</h2>
         <p className="py-5 text-xl">{message}</p>
-        <Link href="/learn-more">
+        <Link href="#">
           <button
             style={{
               background: "#009970",

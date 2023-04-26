@@ -651,8 +651,6 @@ react-icons@^4.8.0:
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.8.0.tgz"
   integrity sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==
 
-<<<<<<< HEAD
-=======
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -679,7 +677,6 @@ react-smooth@^2.0.2:
     fast-equals "^4.0.3"
     react-transition-group "2.9.0"
 
->>>>>>> 368a21e5c739b1b1286d5ca627bab228c466712d
 react-spring@^9.7.1:
   version "9.7.1"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.7.1.tgz#8acfed700823490a4d9d4cf131c5fea12d1aaa93"
@@ -692,8 +689,6 @@ react-spring@^9.7.1:
     "@react-spring/web" "~9.7.1"
     "@react-spring/zdog" "~9.7.1"
 
-<<<<<<< HEAD
-=======
 react-transition-group@2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
@@ -704,7 +699,6 @@ react-transition-group@2.9.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
->>>>>>> 368a21e5c739b1b1286d5ca627bab228c466712d
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Logo } from "@/public";
+import { Logo1 } from "@/public";
 
 const About = () => {
   return (
@@ -11,24 +11,18 @@ const About = () => {
       >
         About Us
       </h1>
-      <div class="grid grid-cols-1 sm:grid-cols-5 gap-4">
-        <div class=" p-4 sm:col-span-1">
+      <div class="flex flex-wrap items-center justify-center md:justify-start md:items-start md:mt-4 lg:mt-8">
+        <div class="w-full md:w-1/5 px-4 md:px-0">
           <Image
-            style={{ borderRadius: "10px", marginTop: "10px" }}
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-            src={Logo}
-            width={550}
-            height={680}
+            class="max-w-full h-auto object-contain"
+            src={Logo1}
+            alt="Logo"
           />
         </div>
-        <div class="p-4 sm:col-span-4">
+        <div class="w-full md:w-4/5 px-4 md:px-8 lg:px-12 mt-4 md:mt-0">
           <p
-            className="pb-4"
-            style={{
-              fontSize: "20px",
-              textAlign: "justify",
-              marginTop: "10px",
-            }}
+            class="text-lg md:text-xl lg:text-1xl leading-8 md:leading-9 lg:leading-10 text-gray-800"
+            style={{ textAlign: "justify" }}
           >
             Brainycube is a global research organization founded by young
             energetic scientists from different countries during their Bachelor

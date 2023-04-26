@@ -11,10 +11,10 @@ const Services = () => {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    padding: "30px",
+    padding: "20px",
   };
   const cardBody={
-    width: "100%",
+    width: "95%",
     height: "100%",
     display: "flex",
     justifyContent: "center",
@@ -22,9 +22,9 @@ const Services = () => {
     textAlign: "justify",
   }
   return (
-    <div id="services" style={{ background: "#e3e1e1" }} className="mx-auto">
+    <div id="services" style={{ background: "#e3e1e1"}} className="mx-auto">
       <h1
-        style={{ background: "#009970", color: "white" }}
+        style={{ background: "#009970", color: "white" ,margin:"10px 0px"}}
         className="text-2xl font-raleway font-bold text-center p-4"
       >
         Services
@@ -39,7 +39,7 @@ const Services = () => {
                 {" "}
                 Research projects involvement
               </a>
-              <p style={{ textAlign: "justify" }} class=" mb-2">
+              <p style={{ textAlign: "justify" }} class="">
                 Chemistry, Energy, Physics, Robotics, IT and computers, Food
                 Technology, Agriculture, Fin-tech , DIY projects..
               </p>

@@ -1,6 +1,9 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Image from "next/image";
+import { Logo1 } from "@/public";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,10 +14,15 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const hoverColor = (e) => {
+    e.target.style.cssText =
+      "border-bottom: 3px solid #009970; margin-bottom: 5px; cursor: pointer; width:100%";
+  };
+
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("#ffffff");
+        setColor("white");
         setTextColor("#000000");
       } else {
         setColor("transparent");
@@ -29,57 +37,135 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+      <div className="max-w-[1300px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          {/* <div style={{background:"#ffffb3",margin:"10px"}}> */}
           <h2
             style={{
-              color: `${textColor}`,
               background: "#ffffb3",
               padding: "10px",
               cursor: "pointer",
             }}
-            className="font-bold text-4xl"
+            class="mb-1 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
             <span style={{ color: "red" }}>Brainy</span>
             <span style={{ color: "green" }}>cube</span>
           </h2>
-          {/* </div> */}
+          {/* <Image
+                alt=""
+                class="object-cover w-full"
+                src={Logo1}
+                width={40}
+                height={40}
+              /> */}
         </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4"  >
-            <Link href="/" >Home</Link>
+        <ul
+          style={{ color: `${textColor}`, fontSize: "20px" }}
+          className="hidden sm:flex"
+        >
+          <li className="p-4">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Home
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/#about">About</Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              About
+            </Link>
           </li>
 
           <li className="p-4">
-            <Link href="#services">Services</Link>
-          </li>
-          <li className="p-4">
-            <Link href="#events">Events</Link>
-          </li>
-          <li className="p-4">
-            <Link href="#portfolio">Portfolio</Link>
-          </li>
-          <li className="p-4">
-            <Link href="#team">Team</Link>
-          </li>
-          <li className="p-4">
-            <Link href="#contact">Contact </Link>
-          </li>
-          <li className="p-1">
-            <button
-              style={{
-                background: "#009970",
-                borderRadius: "20px",
-                color: "white",
-              }}
-              className="px-8 py-2 border"
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
             >
-              Get Started
-            </button>
+              Services
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              to="events"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Events
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              to="awards"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Awards
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Team
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              Contact{" "}
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              to="NYSS"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onMouseOver={hoverColor}
+              onMouseOut={(e) => (e.target.style.borderBottom = "transparent")}
+            >
+              NYSS{" "}
+            </Link>
           </li>
         </ul>
 
@@ -129,7 +215,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-2xl hover:text-gray-300"
             >
-              <Link href="/#portfolio">Portfolio</Link>
+              <Link href="/#awards">Awards</Link>
             </li>
             <li
               onClick={handleNav}
@@ -145,18 +231,9 @@ const Navbar = () => {
             </li>
             <li
               onClick={handleNav}
-              className="p-1 text-1xl hover:text-gray-300"
+              className="p-4 text-2xl hover:text-gray-300"
             >
-              <button
-                style={{
-                  background: "#009970",
-                  borderRadius: "20px",
-                  color: "white",
-                }}
-                className="px-5 py-2 border"
-              >
-                Get Started
-              </button>
+              <Link href="/#contact">NYSS </Link>
             </li>
           </ul>
         </div>

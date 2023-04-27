@@ -13,10 +13,10 @@ import {
   Manoj,
   Udit,
   Nimesh,
-  Bikash,
-  Birendra,
   Tarachandra,
   Bikash1,
+  Babita,
+  Pradip,
 } from "@/public";
 
 //icons
@@ -50,17 +50,17 @@ const TeamMember = () => {
       twitter: "/",
     },
     {
-      name: "TaraChan Yadav",
+      name: "TaraChand Yadav",
       position: "Data Scientist",
       image: Tarachandra,
       description:
-        "Experience in data science and skilled in machine learning, predictive modeling, statistical techniques, and data visualization.",
+        "Passionate about data science, statistical modeling, and machine learning, and believes in giving back to society while also valuing spending time with family and friends.",
       facebook: "/",
       instagram: "/",
       linkedin: "https://www.linkedin.com/in/tarachand-yadav-2543a539/",
     },
     {
-      name: "Bikash Chaudhary",
+      name: "Bikash Dev",
       position: "Data and Insights Analyst",
       image: Bikash1,
       description:
@@ -115,20 +115,9 @@ const TeamMember = () => {
     {
       name: "Pradeep Aryal",
       position: "Data Science Enthusiast",
-      image: Avtar,
+      image: Pradip,
       description:
         "Machine learning enthusiast who has conducted projects in the domain of topic classification and recommender systems.",
-      facebook: "/",
-      instagram: "/",
-      linkedin: "/",
-      twitter: "/",
-    },
-    {
-      name: "Bikash Dev",
-      position: "Engineering",
-      image: Avtar,
-      description:
-        "Research interests programming, app development, robotics and rocket design.",
       facebook: "/",
       instagram: "/",
       linkedin: "/",
@@ -147,10 +136,10 @@ const TeamMember = () => {
     },
     {
       name: "Babita Sharma",
-      position: "Engineering",
-      image: Avtar,
+      position: "Public Health Expert and Researcher",
+      image: Babita,
       description:
-        "Research interests programming, app development, robotics and rocket design.",
+        "Flexible and experienced public health professional with a PhD in progress, who has published articles in national and international journals and works as a Public Health Officer at AMDA Hospital in Nepal.",
       facebook: "/",
       instagram: "/",
       linkedin: "/",
@@ -198,9 +187,7 @@ const TeamMember = () => {
                   />
                   <div class="absolute top-0 left-0 right-0 bottom-0 bg-gray-900 opacity-0 hover:opacity-75 transition-opacity duration-500">
                     <div class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-                      <h1 class="text-white text-3xl font-bold">
-                        {team.position}
-                      </h1>
+                      <h3 class="text-white font-bold">{team.position}</h3>
                     </div>
                   </div>
                 </div>
@@ -214,7 +201,9 @@ const TeamMember = () => {
                 {team.name}
               </h3>
               <p
-                style={{ textAlign: "center" }}
+                style={{
+                  textAlign: "justify",
+                }}
                 class="text-gray-700 text-base"
               >
                 {team.description}

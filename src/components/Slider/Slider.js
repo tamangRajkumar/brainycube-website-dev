@@ -5,7 +5,7 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const Slider = ({ slides }) => {
   console.log("daqa", slides);
-  const [current, setCurrent] = useState(1);
+  const [current, setCurrent] = useState(0);
   // const length = slides.length;
 
   const nextSlide = () => {
@@ -28,10 +28,10 @@ const Slider = ({ slides }) => {
         Highlights
       </h1>
       <div className="relative flex justify-center p-4">
-        {SliderData.map((slide, index) => {
+        {SliderData?.map((slide, index) => {
           return (
             <div
-              key={index}
+              key={slide?.id}
               className={
                 index === current
                   ? "opacity-[1] ease-in duration-1000"
@@ -46,7 +46,7 @@ const Slider = ({ slides }) => {
               />
               {index === current && (
                 <Image
-                  src={slide.image}
+                  src={slide?.image}
                   alt="/"
                   width="1440"
                   height="600"

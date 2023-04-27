@@ -39,24 +39,18 @@ const Navbar = () => {
     >
       <div className="max-w-[1300px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h2
+        <h2
             style={{
+              color: `${textColor}`,
               background: "#ffffb3",
               padding: "10px",
               cursor: "pointer",
             }}
-            class="mb-1 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            className="font-bold text-4xl"
           >
             <span style={{ color: "red" }}>Brainy</span>
             <span style={{ color: "green" }}>cube</span>
           </h2>
-          {/* <Image
-                alt=""
-                class="object-cover w-full"
-                src={Logo1}
-                width={40}
-                height={40}
-              /> */}
         </Link>
         <ul
           style={{ color: `${textColor}`, fontSize: "20px" }}

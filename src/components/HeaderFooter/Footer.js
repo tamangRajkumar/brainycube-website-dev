@@ -42,7 +42,7 @@ function Footer() {
                     <div class="flex items-center mt-8 text-white-600 ">
                       <HiOutlineMail size="20px" style={{ color: "#009970" }} />
                       <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                        brainycube.org@gmail.com
+                      info@brainycube.org.np
                       </div>
                     </div>
                   </li>

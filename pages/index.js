@@ -14,7 +14,6 @@ import Navbar from "@/src/components/HeaderFooter/Nav";
 import ScrollTopButton from "@/src/components/utils/BackToTop";
 export default function Home() {
 
-
   return (
     <>
       <div>

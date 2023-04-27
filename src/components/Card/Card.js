@@ -33,23 +33,24 @@ const Card = () => {
             <ul>
               <ul>
                 <li>
-                  <span class="ml-2">&#8226;</span> Publishes research articles
+                  <span class="ml-2">&#8226;</span> Young, diverse team founded
+                  Brainycube.
                 </li>
                 <li>
-                  <span class="ml-2">&#8226;</span> Supplies research sources
-                  and publishes articles
+                  <span class="ml-2">&#8226;</span> Offers research services in
+                  Data Science, IoT, AI, ML, and Health Analytics.
                 </li>
                 <li>
-                  <span class="ml-2">&#8226;</span> Hosts conferences to bring
-                  smart brains together
+                  <span class="ml-2">&#8226;</span> Recognized for promoting
+                  innovation among young scientists.
                 </li>
                 <li>
-                  <span class="ml-2">&#8226;</span> Vision to become one of the
-                  largest research hubs
+                  <span class="ml-2">&#8226;</span> Organizes local, national,
+                  and international research events.
                 </li>
                 <li>
-                  <span class="ml-2">&#8226;</span> Collaboration with
-                  professors from around the world
+                  <span class="ml-2">&#8226;</span> Goal: largest research
+                  provider in natural, engineering, and behavioral sciences.
                 </li>
               </ul>
             </ul>
@@ -77,7 +78,7 @@ const Card = () => {
             </p>
             <a
               style={{ background: "#009970" }}
-              href="https://forms.gle/vCBGsKE1QRisPZSp6"
+              href="https://forms.gle/ro5Aoig11saNxx499"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg "
             >
               Apply Now
@@ -102,7 +103,7 @@ const Card = () => {
             </p>
             <a
               style={{ background: "#009970" }}
-              href="/our-projects"
+              href="#"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg "
             >
               Our Projects
@@ -128,7 +129,7 @@ const Card = () => {
             </p>
             <a
               style={{ background: "#009970" }}
-              href="commercial-projects"
+              href="#"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg "
               target="_blank"
             >

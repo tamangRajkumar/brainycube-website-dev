@@ -24,20 +24,15 @@ const About = () => {
             class="text-lg md:text-xl lg:text-1xl leading-8 md:leading-9 lg:leading-10 text-gray-800"
             style={{ textAlign: "justify" }}
           >
-            Brainycube is a global research organization founded by young
-            energetic scientists from different countries during their Bachelor
-            with a moto “Let’s Continue Breaking the Impossible” study in
-            university. Brainycube established with an aim to provide
-            opportunities to the young talented brain. Brainycube’s vision and
-            mission are to supply all possible sources needed for different
-            research purposes. Brainycube has been organized numbers of local,
-            national and international events such as research technique
-            workshop, conference, summit and competition. Brainycube also
-            received national and international awards for its works promoting
-            research for the young scientist. It’s goals also to be the largest
-            research hub by having country representatives in different
-            countries with well flowered by the tremendous scientific committee
-            and executive bodies each country respectively.
+            Brainycube is a global research organization founded by young,
+            energetic scientists during their Bachelor's studies. Our mission is
+            to promote research among talented young minds by offering completed
+            services in Data Science, IoT, AI, ML, and Health Analytics, along
+            with consulting. We organize events and have received recognition
+            for our efforts. Our goal is to become the largest research and
+            technical solutions provider with a tremendous scientific and
+            technical workforce in our team and executive bodies. Join us at
+            Brainycube to break new ground in research and innovation.
           </p>
         </div>
       </div>

@@ -72,3 +72,5 @@ export { default as GWRRT18C } from "./assets/images/gwrrt18-3.jpg";
 export { default as NYSS19A } from "./assets/images/nyss19-1.jpg";
 export { default as NYSS19B } from "./assets/images/nyss19-2.jpg";
 export { default as NYSS19C } from "./assets/images/nyss19-3.jpg";
+
+export { default as POPUP } from "./assets/images/popup.png";
